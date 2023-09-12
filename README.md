@@ -103,6 +103,10 @@ while true; do { echo -e "HTTP/1.1 200 OK\r\n$(date)\r\n\r\n<h1>hello world from
 
 ## Standards
 
++ [angea (Ange Albertini)](https://github.com/angea)
++ [Free Online XSL Transformer (XSLT) - FreeFormatter.com](https://freeformatter.com/xsl-transformer.html)
++ [E-invoice specification | Estonian Association of Information Technology and Telecommunications](https://itl.ee/en/estonian-ict-cluster/real-time-economy/e-invoice-specification/) 
+
 + [docs/PDF/PDF.md at master · corkami/docs](https://github.com/corkami/docs/blob/master/PDF/PDF.md)
   
 + [meta-module/docs: docs.metamodule.org](https://github.com/meta-module/docs)
