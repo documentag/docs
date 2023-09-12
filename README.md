@@ -67,14 +67,14 @@ documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip 
 
 repozytorium git do odczytu
 ```bash
-cdnop provider ADD domain.com CNAME git-static.faas.ovh
-cdnop provider ADD domain.com TXT github.com/documentag/example.git
+cdnop provider ADD doc.domain.com CNAME git-static.faas.ovh
+cdnop provider ADD doc.domain.com TXT github.com/documentag/example.git
 ```
 
 repozytorium git do zapisu
 ```bash
-cdnop provider ADD domain.com CNAME git-admin.faas.ovh
-cdnop provider ADD domain.com TXT github.com/documentag/example.git
+cdnop provider ADD doc-admin.domain.com CNAME git-admin.faas.ovh
+cdnop provider ADD doc-admin.domain.com TXT github.com/documentag/example.git
 ```
 
 lub z pliku archiwum zip
