@@ -127,11 +127,28 @@ recordns provider ADD doc.domain.com TXT github.com/documentag/docs/archive/refs
 
 private user faas server with app and data definition and credentials from env variables
 
+username.oneday.run - user of platform with local user on server with local docker and parameters from TXT 
+```bash
+recordns ionos.de ADD doc.domain.com CNAME username.oneday.run
+recordns ionos.de ADD _config_docker.doc.domain.com TXT dockerhub.com/documentag/docs
+recordns ionos.de ADD _config_code.doc.domain.com TXT github.com/documentag/docs.git
+recordns ionos.de ADD _config_data.doc.domain.com TXT github.com/documentag/docs/archive/refs/heads/main.zip
+```
+
+lub 
+
+```bash
+recordns cloudflare.com ADD doc.domain.com CNAME username.oneday.run
+recordns cloudflare.com ADD json.doc.domain.com TXT '{ "docker": "dockerhub.com/documentag/docs", "code": "github.com/documentag/docs.git", "data": "github.com/documentag/docs/archive/refs/heads/main.zip"}
+```
+
+lub 
+
 ```bash
 recordns provider ADD doc.domain.com CNAME username.oneday.run
-recordns provider ADD git-app.doc.domain.com TXT github.com/documentag/docs.git
-recordns provider ADD zip-data.doc.domain.com TXT github.com/documentag/docs/archive/refs/heads/main.zip
+recordns provider ADD config.doc.domain.com TXT github.com/documentag/doc-config.git
 ```
+
 
 
 ## Formaty danych
