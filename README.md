@@ -33,6 +33,27 @@ format plików archiwum zawierające dane:
         <body> - include all path to data, give the rights to update file
 
 
+## Why?
+
++ Utrzymanie, Maintenance
+    + Aktualizacje
+    + Zależności
+    + Security
+     + server
+   + software
+   + environment
+   + 
++ Marketing, Zarządzanie, strategia
++ Administracja operations
++ integracja
+    + api
+    + webhooks
+    + plugins
++ optymalizacja
+    + latency
+   
+
+
 
 ## Użycie
 
@@ -76,6 +97,8 @@ php -S 127.0.0.1:8000
 
 ## Standards
 
++ [docs/PDF/PDF.md at master · corkami/docs](https://github.com/corkami/docs/blob/master/PDF/PDF.md)
+  
 + [meta-module/docs: docs.metamodule.org](https://github.com/meta-module/docs)
 Metamodules to prepare multisitemap
 
