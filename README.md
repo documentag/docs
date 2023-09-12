@@ -265,6 +265,19 @@ Przykład
 + png icon miniatura
 
 
+#### Update Data
+
+Buy
++ data/order
++ data/payment
++ data/booking 
+
+Sale to customer
++ data/order
++ data/payment
++ data/booking 
+
+
 ### API
 
 #### function download_from_api()
