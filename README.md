@@ -45,10 +45,20 @@ format plików archiwum zawierające dane:
   
 ### 1. W dowolnej przeglądarce internetowej lokalnie
 
+html
 ```bash
 documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip -render_to_html index.html
 ```
 
+lub
+
+mhtml
+```bash
+documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip -render_to_mhtml index.mhtml
+```
+
+
+open document
 ```bash    
 open index.html 
 ```
@@ -72,30 +82,30 @@ documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip 
 
 repozytorium git do odczytu
 ```bash
-cdnop provider ADD doc.domain.com CNAME git-static.faas.ovh
-cdnop provider ADD doc.domain.com TXT github.com/documentag/example.git
+recordns provider ADD doc.domain.com CNAME git-static.faas.ovh
+recordns provider ADD doc.domain.com TXT github.com/documentag/example.git
 ```
 
 repozytorium git do zapisu
 ```bash
-cdnop provider ADD doc-admin.domain.com CNAME git-admin.faas.ovh
-cdnop provider ADD doc-admin.domain.com TXT github.com/documentag/example.git
+recordns provider ADD doc-admin.domain.com CNAME git-admin.faas.ovh
+recordns provider ADD doc-admin.domain.com TXT github.com/documentag/example.git
 ```
 
 lub z pliku archiwum zip
 
 ```bash
-cdnop provider ADD doc.domain.com CNAME zip-static.faas.ovh
-cdnop provider ADD doc.domain.com TXT github.com/documentag/docs/archive/refs/heads/main.zip
+recordns provider ADD doc.domain.com CNAME zip-static.faas.ovh
+recordns provider ADD doc.domain.com TXT github.com/documentag/docs/archive/refs/heads/main.zip
 ```
 
 
 private user faas server with app and data definition and credentials from env variables
 
 ```bash
-cdnop provider ADD doc.domain.com CNAME username.oneday.run
-cdnop provider ADD git-app.doc.domain.com TXT github.com/documentag/docs.git
-cdnop provider ADD zip-data.doc.domain.com TXT github.com/documentag/docs/archive/refs/heads/main.zip
+recordns provider ADD doc.domain.com CNAME username.oneday.run
+recordns provider ADD git-app.doc.domain.com TXT github.com/documentag/docs.git
+recordns provider ADD zip-data.doc.domain.com TXT github.com/documentag/docs/archive/refs/heads/main.zip
 ```
 
 
