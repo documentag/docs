@@ -51,7 +51,7 @@ format plików archiwum zawierające dane:
     + plugins
 + optymalizacja
     + latency
-   
++ learn curve - krzywa uczenia   
 
 
 
