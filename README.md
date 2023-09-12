@@ -76,6 +76,9 @@ php -S 127.0.0.1:8000
 
 ## Standards
 
++ [meta-module/docs: docs.metamodule.org](https://github.com/meta-module/docs)
+Metamodules to prepare multisitemap
+
 
 + [MHTML - Wikipedia](https://en.wikipedia.org/wiki/MHTML)
 
@@ -193,3 +196,6 @@ recordns provider ADD config.doc.domain.com TXT github.com/documentag/doc-config
 + w formacie html z tymi metadanymi wewnątrz
 
 
+
+---
++ [Editing docs/README.md at main · documentag/docs](https://github.com/documentag/docs/edit/main/README.md)
