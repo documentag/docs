@@ -38,7 +38,12 @@ format plików archiwum zawierające dane:
 
 ## Użycie
 
-+ w dowolnej przeglądarce internetowej lokalnie
+
++ documentag render for browser
++ documentag host for machine
++ cdns
+  
+### 1. W dowolnej przeglądarce internetowej lokalnie
 
 ```bash
 documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip -render_to_html index.html
@@ -48,7 +53,7 @@ documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip 
 open index.html 
 ```
 
-+ na serwerze lub lokalnie w formie uslugi
+### 2. Na serwerze lub lokalnie w formie uslugi
 
 systemd stop,start,status
 
@@ -63,7 +68,7 @@ documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip 
 ```
 
 
-+ poprzez konfigurację cdns na platformie FaaS
+### 3. Poprzez konfigurację cdns na platformie FaaS
 
 repozytorium git do odczytu
 ```bash
