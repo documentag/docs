@@ -41,8 +41,33 @@ format plików archiwum zawierające dane:
 
 + documentag render for browser
 + documentag host for machine
-+ cdns
-  
++ recordns to host on FaaS platform
+    + public
+    + private
+
+
+## Standards
+
++ [MHTML - Wikipedia](https://en.wikipedia.org/wiki/MHTML)
+
+
+
+An MHTML file is a web page archive format. It is meant to be stored and viewed but not to be edited directly.
+
+However, you can easily extract the MHTML file to a regular HTML document (with linked files), edit it with your favorite HTML editor and then export it back to an MHTML archive (including the linked files).
+
+you can open/save between HTML and MHTML files
+
+### features
+
++ encryption
++ serialization
++ archive
++ compress
++ minimize (css, js, html)
+
+
+
 ### 1. W dowolnej przeglądarce internetowej lokalnie
 
 html
