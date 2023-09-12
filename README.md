@@ -46,6 +46,36 @@ format plików archiwum zawierające dane:
     + private
 
 
+## output formats
+
++ mhtml
++ zip
+
+
+## output services
+
+Hereafter is a subset of the link, that contains in my opinion the most convenient ones.
+
+### Python:
+
+python -m http.server 8000
+
+### Ruby:
+
+ruby -run -ehttpd . -p8000
+
+### Node:
+
+npm install -g http-server
+http-server -p 8000
+
+### Php:
+
+php -S 127.0.0.1:8000
+
+
+  
+
 ## Standards
 
 
