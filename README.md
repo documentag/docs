@@ -59,7 +59,7 @@ documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip 
 
 z zapisem danych 
 ```bash
-documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip -static_host localhost -static_port 80 -admin_host localhost -static_port 8080
+documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip -static_host localhost -static_port 80 -admin_host localhost -admin_port 8080
 ```
 
 
