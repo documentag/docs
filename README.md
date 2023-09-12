@@ -1,7 +1,5 @@
 # [docs.documentag.com](https://docs.documentag.com/)
 
-> format plików archiwum zawierające dane:
-
 format plików archiwum zawierające dane:
         
     schema/ - schema for commands
@@ -122,6 +120,8 @@ However, you can easily extract the MHTML file to a regular HTML document (with 
 
 you can open/save between HTML and MHTML files
 
+
+
 ### features
 
 + encryption
@@ -129,6 +129,8 @@ you can open/save between HTML and MHTML files
 + archive
 + compress
 + minimize (css, js, html)
+
+  
 
 ## Tools
 
@@ -144,6 +146,12 @@ html
 ```bash
 documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip -render_to_html index.html
 ```
+lub
+
+markdown
+```bash
+documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip -render_to_md index.md
+```
 
 lub
 
@@ -157,6 +165,7 @@ open document
 ```bash    
 open index.html 
 ```
+
 
 ### 2. Na serwerze lub lokalnie w formie uslugi
 
@@ -221,6 +230,7 @@ recordns provider ADD config.doc.domain.com TXT github.com/documentag/doc-config
 
 
 
+
 ## Formaty danych
 
 
@@ -271,6 +281,7 @@ Przykład
     + xml
     + pdf
     + png icon miniatura
+    + markdown
 
 ---
 + [Editing docs/README.md at main · documentag/docs](https://github.com/documentag/docs/edit/main/README.md)
