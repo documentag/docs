@@ -40,24 +40,48 @@ format plików archiwum zawierające dane:
 
 + w dowolnej przeglądarce internetowej lokalnie
 
+```bash
+documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip -render_to_html index.html
+```
+
 ```bash    
 open index.html 
 ```
 
-+ na serwerze
++ na serwerze lub lokalnie w formie uslugi
+
+systemd stop,start,status
+
+tylko do doczytu, renderowania
+```bash
+documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip -static_host localhost -static_port 80
+```
+
+z zapisem danych 
+```bash
+documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip -static_host localhost -static_port 80 -admin_host localhost -static_port 8080
+```
 
 
 + poprzez konfigurację cdns na platformie FaaS
 
+repozytorium git do odczytu
 ```bash
-cdnop provider ADD domain.com CNAME git.faas.ovh
+cdnop provider ADD domain.com CNAME git-static.faas.ovh
 cdnop provider ADD domain.com TXT github.com/documentag/example.git
 ```
 
-lub 
+repozytorium git do zapisu
 ```bash
-cdnop provider ADD domain.com CNAME zip.faas.ovh
+cdnop provider ADD domain.com CNAME git-admin.faas.ovh
 cdnop provider ADD domain.com TXT github.com/documentag/example.git
+```
+
+lub z pliku archiwum zip
+
+```bash
+cdnop provider ADD domain.com CNAME zip-static.faas.ovh
+cdnop provider ADD domain.com TXT github.com/documentag/docs/archive/refs/heads/main.zip
 ```
 
 
