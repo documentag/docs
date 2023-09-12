@@ -230,5 +230,48 @@ recordns provider ADD config.doc.domain.com TXT github.com/documentag/doc-config
 
 
 
+## TODO:
+
+Przykład
+
+1. faktury z całego miesiąca
+
+### Email
+
+#### function create_from_email()
++ python script
+    + daterange
+    + data type
+
+
+#### Document format
++ treść email z załacznikami
+    + xml
+    + pdf
+    
+
+#### Init Data in Document
+
++ move attachements
++ png icon miniatura
+
+
+### API
+
+#### function download_from_api()
+
+1. Auth data
+    + key auth
+
+2. Request    
+    + curl request
+    + datartange
+
+3. Init Data in document
++ treść email z załacznikami
+    + xml
+    + pdf
+    + png icon miniatura
+
 ---
 + [Editing docs/README.md at main · documentag/docs](https://github.com/documentag/docs/edit/main/README.md)
