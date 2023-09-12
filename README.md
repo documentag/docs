@@ -68,7 +68,7 @@ documentag -url_from_zip github.com/documentag/docs/archive/refs/heads/main.zip 
 ```
 
 
-### 3. Poprzez konfigurację cdns na platformie FaaS
+### 3. Poprzez konfigurację cdns na publicznej platformie FaaS
 
 repozytorium git do odczytu
 ```bash
@@ -85,8 +85,17 @@ cdnop provider ADD doc-admin.domain.com TXT github.com/documentag/example.git
 lub z pliku archiwum zip
 
 ```bash
-cdnop provider ADD domain.com CNAME zip-static.faas.ovh
-cdnop provider ADD domain.com TXT github.com/documentag/docs/archive/refs/heads/main.zip
+cdnop provider ADD doc.domain.com CNAME zip-static.faas.ovh
+cdnop provider ADD doc.domain.com TXT github.com/documentag/docs/archive/refs/heads/main.zip
+```
+
+
+private user faas server with app and data definition and credentials from env variables
+
+```bash
+cdnop provider ADD doc.domain.com CNAME username.oneday.run
+cdnop provider ADD git-app.doc.domain.com TXT github.com/documentag/docs.git
+cdnop provider ADD zip-data.doc.domain.com TXT github.com/documentag/docs/archive/refs/heads/main.zip
 ```
 
 
