@@ -48,6 +48,7 @@ format plików archiwum zawierające dane:
 
 ## Standards
 
+
 + [MHTML - Wikipedia](https://en.wikipedia.org/wiki/MHTML)
 
 
@@ -65,6 +66,12 @@ you can open/save between HTML and MHTML files
 + archive
 + compress
 + minimize (css, js, html)
+
+## Tools
+
+[SingleFile - Chrome Web Store](https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle)
+Save a complete page into a single HTML file
+SingleFile is an extension that helps you to save a complete page (with CSS, images, fonts, frames, etc.) as a single HTML file.
 
 
 
