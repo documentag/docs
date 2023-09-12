@@ -85,7 +85,7 @@ python -m http.server 8000
 ruby -run -ehttpd . -p8000
 ```
 
-### Nod
+### Node
 ```bash
 npm install -g http-server
 http-server -p 8000
