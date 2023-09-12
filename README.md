@@ -1,10 +1,9 @@
-# docs
-docs.documentag.com
+# [docs.documentag.com](https://docs.documentag.com/)
+
+> format plików archiwum zawierające dane:
 
 format plików archiwum zawierające dane:
-
-    
-    
+        
     schema/ - schema for commands
       pdf.xslt
       ocr.xslt            
