@@ -76,24 +76,30 @@ format plików archiwum zawierające dane:
 Hereafter is a subset of the link, that contains in my opinion the most convenient ones.
 
 ### Python:
-
+```bash
 python -m http.server 8000
+```
 
 ### Ruby:
-
+```bash
 ruby -run -ehttpd . -p8000
+```
 
 ### Node:
-
+```bash
 npm install -g http-server
 http-server -p 8000
+```
 
 ### Php:
-
+```bash
 php -S 127.0.0.1:8000
+```
 
-
-  
+### bash
+```bash
+while true; do { echo -e "HTTP/1.1 200 OK\r\n$(date)\r\n\r\n<h1>hello world from $(hostname) on $(date)</h1>" |  nc -vl 8080; } done
+```
 
 ## Standards
 
