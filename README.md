@@ -7,11 +7,9 @@ format plików archiwum zawierające dane:
     
     schema/ - schema for commands
       pdf.xslt
-      pdf_ocr.xslt
-      create.xslt
-      add_table.xslt
-      add_table.xslt
-      add_rightx.xml
+      ocr.xslt            
+      table.xslt
+      right.xslt
         
     data/ - data tables, history changes (commands) data inputs, e.g.: add icon, extracted ocr data
       history.xml      
