@@ -139,8 +139,25 @@ Save a complete page into a single HTML file
 SingleFile is an extension that helps you to save a complete page (with CSS, images, fonts, frames, etc.) as a single HTML file.
 
 
+### documentag
+
+generowanie/konewrsja róznych typów dokumentów ze źródła git
+
+
+### dialogware
+
+konwersja text to software
+
+
+### dialogsync
+
+syncrhonizacja źródła kodu z dokumentacją markdown
+dialogsync: markdown <-> git sourcode
+
 
 ### 1. W dowolnej przeglądarce internetowej lokalnie
+
+
 
 html
 ```bash
